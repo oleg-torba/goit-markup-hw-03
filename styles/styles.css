@@ -117,7 +117,7 @@ body {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    list-style-type: none;
+
 }
 
 .menu .nav-list:last-child {
@@ -132,30 +132,15 @@ body {
     text-decoration: none;
 }
 
-
-/* Поточна сторінка */
-.menu-link .current {
-    min-width: 49px;
-    padding: 32px 0px;
-    text-decoration: none;
-    text-align: center;
-}
-
 .menu-link:hover,
 .menu-link:focus {
     color: var(--hover-color);
 }
 
 
-.menu-link .current:hover,
-.menu-link .current:focus {
-    color: var(--hover-color);
-}
-
 /* Поточна сторінка */
-.menu-link .current:current {
-    color: var(--button-hover-bgc);
-}
+.menu-link.current {
+    color: var(--hover-color)}
 
 /* Контакти в хедері */
 .contact {
@@ -170,7 +155,6 @@ body {
 }
 
 .contact-item {
-    /* display: flex; */
     margin-right: 50px;}
 
 
