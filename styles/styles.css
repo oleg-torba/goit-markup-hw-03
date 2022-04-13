@@ -45,8 +45,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     padding: 0 15px;
 }
 
@@ -88,7 +87,7 @@ body {
 .footer-logo {
     display: inline-block;
     min-width: 145px;
-    padding: 60px 0px 20px 0px;
+    margin-bottom: 20px;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -127,7 +126,6 @@ body {
 
 
 .menu-link {
-    display: block;
     min-width: 49px;
     padding: 32px 0px;
     color: var(--main-color);
@@ -136,8 +134,7 @@ body {
 
 
 /* Поточна сторінка */
-.current {
-    display: block;
+.menu-link .current {
     min-width: 49px;
     padding: 32px 0px;
     text-decoration: none;
@@ -150,14 +147,14 @@ body {
 }
 
 
-.current:hover,
-.current:focus {
+.menu-link .current:hover,
+.menu-link .current:focus {
     color: var(--hover-color);
 }
 
 /* Поточна сторінка */
-.current:current {
-    color: var(--hover-color);
+.menu-link .current:current {
+    color: var(--button-hover-bgc);
 }
 
 /* Контакти в хедері */
@@ -173,7 +170,7 @@ body {
 }
 
 .contact-item {
-    display: flex;
+    /* display: flex; */
     margin-right: 50px;}
 
 
@@ -203,6 +200,8 @@ body {
 
 .hero {
     background-color: var(--hero-bgc);
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     letter-spacing: 0.06em;
 }
@@ -210,21 +209,21 @@ body {
 .hero-title {
     max-width: 696px;
     margin: 0 auto;
-    margin-top: 106px;
+    text-transform: uppercase;
     color: var(--adress-hero-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
 }
 
 /* hero-button */
 .hero-button {
     display: inline-block;
-    border-radius: 4px;
     border: 1px solid transparent;
+    border-radius: 4px;
     padding: 10px 32px;
     margin-top: 30px;
-    margin-bottom: 106px;
     min-width: 200px;
     cursor: pointer;
     color: var(--adress-hero-color);
@@ -259,6 +258,9 @@ body {
 
 
 /* Секція переваг */
+.feature {
+    padding-top: 0px;
+}
 
 .benefits {
     display: flex;
@@ -281,6 +283,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
     letter-spacing: 0.03em;
 }
 
@@ -293,9 +296,12 @@ body {
 
 
 /* Стилі верхніхкартинок студії */
+.feature {
+    padding-top: 0px;
+}
+
 
 .images {
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -304,7 +310,6 @@ body {
 /* Стилі для картинок портфоліо */
 .image-list {
     width: 370px;
-    border: 1px solid var(--image-border-color);
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -324,7 +329,6 @@ body {
 }
 
 .image-block {
-    justify-content: center;
     display: flex;
     list-style-type: none;
 }
@@ -333,13 +337,11 @@ body {
 /* Обгортка команди */
 
 .command {
-    justify-content: center;
     background-color: var(--section-command-bgc);
 }
 
 .command-list {
     width: 270px;
-    border: 1px solid var(--image-border-color);
     margin-right: 30px;
 }
 
@@ -349,10 +351,14 @@ body {
 
 .team-work {
     min-width: 147px;
-    padding: 30px 24px;
+    padding: 30px 0;
+    border: 1px solid var(--image-border-color);
+    border-bottom: 0;
+    text-align: center;
 }
 .team {
     margin-bottom: 10px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -360,6 +366,7 @@ body {
 
 .work {
     color: var(--secondary-color);
+    font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
@@ -369,6 +376,7 @@ body {
 
 /* footer */
 .footer {
+    padding: 60px 0;
     background-color: var(--footer-bgc);
 }
 
@@ -420,7 +428,6 @@ body {
 
 .contact-list .adress-list:last-child {
     margin-bottom: 0;
-    padding-bottom: 60px;
 }
 
 /* Тел і пошта */
@@ -458,6 +465,8 @@ body {
 
 .project-product {
     padding: 20px 24px;
+    border: 1px solid var(--image-border-color);
+    border-top: 0;
 }
 
 /* Кнопки портфоліо */
@@ -465,13 +474,13 @@ body {
 
 .but {
     justify-content: center;
-    display: inline-block;
-    display: flex
+    display: flex;
+    margin-bottom: 50px;
+    
 }
 
 .buttons-list {
     margin-right: 8px;
-    margin-bottom: 50px;
     list-style-type: none;
 }
 
